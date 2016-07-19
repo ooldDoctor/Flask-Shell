@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <head>
+    <title>Polska</title>
+ </head>
+ <body>
+
+<div id="img_home"></div>
+	
+<!--<button onclick="addimage()" type="button">DISPLAY IMAGE</button>-->
+
+
+
+<form method="get" action="displayImage">
+    <button type="submit">DisplayImage</button>
+</form>
+<img src = {{src}}>
+
+
+<!--<button onclick="addimage()" type="button">DIS</button>
+
+<script>
+function addimage() {
+    var img = new Image();
+    img.src = "https://www.w3.org/TR/PNG/png-figures/fig45.png"
+    img_home.appendChild(img);
+}
+
+</script>-->
+<form class="form-signin" action="list_of_errors" method="post" role="form">
+ 
+             <button class="btn btn-lg btn-primary btn-block" type="submit">errors </button>
+         </form>
+
+<script>
+
+
+</script> 
+
+{% for page in var %}
+<p> <a href = {{page}}>{{ page }} </a></p>
+{% endfor %}
+
+
+
+
+ 
+</body>
+</html>
